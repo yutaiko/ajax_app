@@ -5,7 +5,7 @@ function memo(){
     //フォームデータのオブジェクト生成と変数定義
     const formData = new FormData(document.getElementById("form"));
     //オブジェクト生成
-    const XHR = new XMLHttpRequestEventTarget();
+    const XHR = new XMLHttpRequest();
     //openメソッドでリクエストの内容設定
     XHR.open("POST", "/posts", true);
     //レスポンスの形式定義
